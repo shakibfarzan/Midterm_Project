@@ -18,10 +18,6 @@
   margin-left: 5%;
 }
 
-.navbar {
-  height: var(--navbar-height);
-}
-
 .nav-link {
   cursor: pointer;
   color: white !important;
@@ -61,10 +57,6 @@
   padding: 0 0.2rem;
 }
 
-.sm-logo:nth-of-type(1) {
-  margin-left: 1rem;
-}
-
 @media (min-width: 576px) {
   .navbar-expand-sm .navbar-nav {
     width: 85%;
@@ -76,4 +68,103 @@
   .nav-link {
     padding: 0 1.5rem !important;
   }
+  .navbar {
+    height: var(--navbar-height);
+  }
+  .sm-logo:nth-of-type(1) {
+    margin-left: 1rem;
+  }
+  .gallery {
+    display: grid;
+    height: 174vh;
+    grid-template-columns: repeat(auto-fill, minmax(200px, auto));
+    grid-template-rows: repeat(auto-fill, minmax(200px, auto));
+  }
+}
+
+/* Container */
+
+.container {
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+
+/* Homepage */
+.content h1 {
+  font-size: 80px;
+  font-family: "Times New Roman", Times, serif;
+  line-height: 85px;
+  margin-bottom: 170px;
+}
+
+/* Gallery */
+
+.gallery {
+  display: grid;
+  height: 174vh;
+  grid-template-columns: repeat(auto-fill, minmax(200px, auto));
+}
+
+.gallery-item {
+  background-size: 104%;
+  background-position: center center;
+  margin: 0.6rem;
+  cursor: pointer;
+  overflow: hidden;
+  transition: background-size 0.4s linear;
+}
+
+.gallery-item:hover {
+  background-size: 110%;
+}
+
+.gallery-item:nth-of-type(1) {
+  background-image: url(https://kriesi.at/themes/enfold-elegant-portfolio/wp-content/uploads/sites/77/2018/04/logo-8-705x666.jpg);
+}
+
+.gallery-item:nth-of-type(2) {
+  background-image: url(https://kriesi.at/themes/enfold-elegant-portfolio/wp-content/uploads/sites/77/2018/04/mockup-1-705x666.jpg);
+}
+
+.gallery-item:nth-of-type(3) {
+  background-image: url(https://kriesi.at/themes/enfold-elegant-portfolio/wp-content/uploads/sites/77/2018/04/logo-4-705x666.jpg);
+}
+
+.gallery-item:nth-of-type(4) {
+  background-image: url(https://kriesi.at/themes/enfold-elegant-portfolio/wp-content/uploads/sites/77/2018/04/mockup-4-705x666.jpg);
+}
+
+.gallery-item:nth-of-type(5) {
+  background-image: url(https://kriesi.at/themes/enfold-elegant-portfolio/wp-content/uploads/sites/77/2018/04/logo-2-705x666.jpg);
+}
+
+.gallery-item:nth-of-type(6) {
+  background-image: url(https://kriesi.at/themes/enfold-elegant-portfolio/wp-content/uploads/sites/77/2018/04/mockup-2-705x666.jpg);
+}
+.gallery-item:nth-of-type(7) {
+  background-image: url(https://kriesi.at/themes/enfold-elegant-portfolio/wp-content/uploads/sites/77/2018/04/logo-7-705x666.jpg);
+}
+.gallery-item:nth-of-type(8) {
+  background-image: url(https://kriesi.at/themes/enfold-elegant-portfolio/wp-content/uploads/sites/77/2018/04/mockup-7-705x666.jpg);
+}
+.gallery-item:nth-of-type(9) {
+  background-image: url(https://kriesi.at/themes/enfold-elegant-portfolio/wp-content/uploads/sites/77/2018/04/logo-6-705x666.jpg);
+}
+.gallery-item:nth-of-type(10) {
+  background-image: url(https://kriesi.at/themes/enfold-elegant-portfolio/wp-content/uploads/sites/77/2018/04/mockup-3-1500x1418.jpg);
+}
+.gallery-item:nth-of-type(11) {
+  background-image: url(https://kriesi.at/themes/enfold-elegant-portfolio/wp-content/uploads/sites/77/2018/04/logo-3-705x666.jpg);
+}
+.gallery-item:nth-of-type(12) {
+  background-image: url(https://kriesi.at/themes/enfold-elegant-portfolio/wp-content/uploads/sites/77/2018/04/mockup-8-705x666.jpg);
+}
+.gallery-item:nth-of-type(13) {
+  background-image: url(https://kriesi.at/themes/enfold-elegant-portfolio/wp-content/uploads/sites/77/2018/04/logo-5-705x666.jpg);
+}
+.gallery-item:nth-of-type(14) {
+  background-image: url(https://kriesi.at/themes/enfold-elegant-portfolio/wp-content/uploads/sites/77/2018/04/mockup-6-705x666.jpg);
+}
+.gallery-item:nth-of-type(15) {
+  background-image: url(https://kriesi.at/themes/enfold-elegant-portfolio/wp-content/uploads/sites/77/2018/04/logo-1-705x666.jpg);
 }

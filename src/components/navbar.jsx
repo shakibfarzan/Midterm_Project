@@ -1,16 +1,17 @@
 import React from "react";
 import NavLogo from "./common/navbarLogo";
+import { NavLink } from "react-router-dom";
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-sm bg-dark navbar-dark">
       <div className="container-fluid">
-        <a className="navbar-brand" href="#">
+        <NavLink to={"/homepage"} className="navbar-brand">
           <img
             id="logo"
             src={`${process.env.PUBLIC_URL}/images/logo.png`}
             alt="logo"
           />
-        </a>
+        </NavLink>
         <button
           className="navbar-toggler"
           type="button"
@@ -22,16 +23,24 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="collapsibleNavbar">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <a className="nav-link">Home</a>
+              <NavLink to={"/homepage"} className="nav-link">
+                Home
+              </NavLink>
             </li>
-            <li class="nav-item">
-              <a class="nav-link">About</a>
+            <li className="nav-item">
+              <NavLink to={"/about"} className="nav-link">
+                About
+              </NavLink>
             </li>
-            <li class="nav-item">
-              <a class="nav-link">Blog</a>
+            <li className="nav-item">
+              <NavLink to={"/blog"} className="nav-link">
+                Blog
+              </NavLink>
             </li>
-            <li class="nav-item">
-              <a class="nav-link">Contact</a>
+            <li className="nav-item">
+              <NavLink to={"/contact"} className="nav-link">
+                Contact
+              </NavLink>
             </li>
           </ul>
           <NavLogo

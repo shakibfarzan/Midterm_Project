@@ -2,6 +2,10 @@
   --navbar-height: 65px;
 }
 
+*::selection {
+  background-color: black;
+  color: white;
+}
 /* Navbar */
 
 .bg-dark {
@@ -55,31 +59,6 @@
 
 .sm-logo {
   padding: 0 0.2rem;
-}
-
-@media (min-width: 576px) {
-  .navbar-expand-sm .navbar-nav {
-    width: 85%;
-    justify-content: flex-end;
-  }
-  .navbar-expand-sm .navbar-collapse {
-    line-height: var(--navbar-height);
-  }
-  .nav-link {
-    padding: 0 1.5rem !important;
-  }
-  .navbar {
-    height: var(--navbar-height);
-  }
-  .sm-logo:nth-of-type(1) {
-    margin-left: 1rem;
-  }
-  .gallery {
-    display: grid;
-    height: 174vh;
-    grid-template-columns: repeat(auto-fill, minmax(200px, auto));
-    grid-template-rows: repeat(auto-fill, minmax(200px, auto));
-  }
 }
 
 /* Container */
@@ -167,4 +146,137 @@
 }
 .gallery-item:nth-of-type(15) {
   background-image: url(https://kriesi.at/themes/enfold-elegant-portfolio/wp-content/uploads/sites/77/2018/04/logo-1-705x666.jpg);
+}
+
+/* Footer */
+.logo-item {
+  background-color: black;
+  list-style: none;
+  margin: 1rem;
+  padding: 10px 14px;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.logo-item:hover {
+  background-color: rgba(0, 0, 0, 0.877);
+}
+
+.logo-item img {
+  width: 15px;
+  margin-bottom: 4px;
+}
+.footer-logos {
+  display: flex;
+  flex-direction: row !important;
+  justify-content: center;
+}
+
+hr:not([size]) {
+  height: 4px;
+}
+
+hr {
+  margin: 1rem 10rem;
+}
+
+#subscribe {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: 900;
+  text-align: center;
+  font-size: 22px;
+}
+
+#news {
+  text-align: center;
+  color: #b0b0b0;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.submit-box {
+  display: flex;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 31rem;
+  margin-right: 31rem;
+}
+
+.submit-box .btn {
+  margin-left: 4px;
+}
+
+input,
+button {
+  border-radius: 0 !important;
+  border: solid 2px black !important;
+  box-shadow: none !important;
+}
+
+footer {
+  margin-bottom: 6rem;
+}
+
+.footer-item {
+  margin: 1rem;
+}
+
+.footer-item.copyright {
+  list-style: none;
+  text-align: center;
+  margin-top: 0;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: #b0b0b0;
+  font-size: 12px;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+  color: black;
+}
+
+@media (min-width: 576px) {
+  .navbar-expand-sm .navbar-nav {
+    width: 85%;
+    justify-content: flex-end;
+  }
+  .navbar-expand-sm .navbar-collapse {
+    line-height: var(--navbar-height);
+  }
+  .nav-link {
+    padding: 0 1.5rem !important;
+  }
+  .navbar {
+    height: var(--navbar-height);
+  }
+  .sm-logo:nth-of-type(1) {
+    margin-left: 1rem;
+  }
+  .gallery {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(auto-fill, minmax(200px, auto));
+    grid-template-rows: repeat(auto-fill, minmax(200px, auto));
+  }
+  .footer-logos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .logo-item {
+    background-color: black;
+    list-style: none;
+    margin: 1rem;
+    padding: 10px 14px;
+    border-radius: 100%;
+    cursor: pointer;
+  }
+
+  .logo-item img {
+    width: 15px;
+    margin-bottom: 4px;
+  }
 }

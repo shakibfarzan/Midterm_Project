@@ -28,6 +28,7 @@
   background-color: black;
   font-weight: 600;
   transition: all 0.4s ease-in-out;
+  padding-left: 4px !important;
 }
 
 .nav-link:hover {
@@ -70,9 +71,9 @@
 
 /* Homepage */
 .content h1 {
-  font-size: 80px;
+  font-size: 40px;
   font-family: "Times New Roman", Times, serif;
-  line-height: 85px;
+  line-height: 45px;
   margin-bottom: 170px;
 }
 
@@ -177,7 +178,8 @@ hr:not([size]) {
 }
 
 hr {
-  margin: 1rem 10rem;
+  width: 50%;
+  margin: 1rem 25% 1rem 25%;
 }
 
 #subscribe {
@@ -196,10 +198,10 @@ hr {
 
 .submit-box {
   display: flex;
+  width: 100%;
+  justify-content: center;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  margin-left: 31rem;
-  margin-right: 31rem;
 }
 
 .submit-box .btn {
@@ -236,6 +238,43 @@ footer {
 .footer-link:hover {
   text-decoration: underline;
   color: black;
+}
+
+.footer-logos {
+  padding: 0;
+}
+
+.form-control {
+  width: auto;
+}
+#email {
+  width: 50%;
+}
+
+/* about page */
+
+.card {
+  border: 0;
+}
+
+.about-cards-container {
+  padding: 1rem;
+  box-shadow: 0 0px 20px -3px #b0b0b0;
+  margin-bottom: 6rem;
+}
+
+.about-cards-container .card {
+  margin: 1rem;
+  box-shadow: 0 0px 30px -10px #b0b0b0;
+}
+
+.about-cards-container .card .card-title {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: 900;
+}
+
+.about-cards-container .card .card-text {
+  color: #b0b0b0;
 }
 
 @media (min-width: 576px) {
@@ -278,5 +317,18 @@ footer {
   .logo-item img {
     width: 15px;
     margin-bottom: 4px;
+  }
+  #email {
+    width: 25%;
+  }
+  .content h1 {
+    font-size: 80px;
+    line-height: 85px;
+  }
+}
+
+@media (max-width: 976px) {
+  .row {
+    flex-direction: column;
   }
 }

@@ -263,19 +263,22 @@ footer {
   margin-bottom: 10rem;
 }
 
-.about-cards-container .card {
+.about-cards-container .card,
+.blog-cards-container .card {
   margin: 1rem;
   box-shadow: 0 0px 30px -10px #b0b0b0;
 }
 
 .about-cards-container .card .card-title,
-.text-content-title {
+.text-content-title,
+.blog-cards-container .card {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-weight: 900;
 }
 
 .about-cards-container .card .card-text,
-.text-content-paragraph {
+.text-content-paragraph,
+.blog-cards-container .card .card-text {
   color: #b0b0b0;
 }
 
@@ -295,6 +298,31 @@ footer {
 .progress {
   margin-bottom: 2rem;
 }
+
+/* blog page */
+
+.blog-cards-container .card {
+  width: 250px;
+  margin: auto;
+}
+.blog-cards-container .card .image-item {
+  height: 200px;
+  background-size: 110%;
+  background-position: center center;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: all 0.4s linear;
+}
+
+.blog-cards-container .card .image-item:hover {
+  background-size: 115%;
+  opacity: 1;
+}
+
+.blog-cards-container .row {
+  margin-bottom: 2rem;
+}
+
 @media (min-width: 576px) {
   .navbar-expand-sm .navbar-nav {
     width: 85%;
@@ -348,5 +376,11 @@ footer {
 @media (max-width: 976px) {
   .row {
     flex-direction: column;
+  }
+}
+
+@media (max-width: 1200px) {
+  .blog-cards-container .card {
+    width: 100%;
   }
 }

@@ -7,13 +7,10 @@ import L from "leaflet";
 const ContactPage = () => {
   useEffect(() => {
     const map = L.map("map").setView([42.963947, -78.737808], 13);
-    L.tileLayer(
-      "https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png",
-      {
-        attribution:
-          '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-      }
-    ).addTo(map);
+    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      attribution:
+        '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+    }).addTo(map);
     L.marker([42.963947, -78.737808]).addTo(map).bindPopup("Williamsville");
   }, []);
   return (

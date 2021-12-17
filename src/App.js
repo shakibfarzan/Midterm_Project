@@ -24,7 +24,7 @@ function App() {
           <Route path="/blog" component={BlogPage} />
           <Route path="/not-found" component={NotFoundPage} />
           <Redirect from="/" exact to={Homepage} />
-          <Redirect to="/homepage" />
+          <Redirect to="/" />
         </Switch>
         <ScrollToTop />
       </main>
